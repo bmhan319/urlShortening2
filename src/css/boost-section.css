@@ -1,0 +1,68 @@
+.sec3 {
+  max-width: 1440px;
+  width: 100%;
+  background-image: url("../img/bg-boost-mobile.svg");
+  background-color: var(--DarkViolet);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid var(--DarkViolet);
+}
+
+.boost-text-container {
+  text-align: center;
+  margin: 25% 0;
+}
+
+.boost-title {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.boost-start-button {
+  margin-top: 16px;
+  border-radius: 30px;
+  width: 200px;
+  height: 44px; 
+  background-color: var(--Cyan);
+  color: #fff;
+  border: 0;
+  font-size: .85em;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 376px) {
+  .sec3 {
+    background-image: url("../img/bg-boost-desktop.svg");
+    background-size: cover;
+    padding: 40px 0;
+  }
+
+  .boost-text-container {
+    text-align: center;
+    margin:  0;
+  }
+
+  .boost-start-button {
+    width: 200px;
+    height: 44px; 
+    font-size: .85em;
+  }
+
+  .boost-start-button:hover {
+    background-color: var(--BrightButton);
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .boost-title {
+    font-size: 2em;
+  }
+
+  .boost-start-button {
+    width: 11em;
+    height: 2.7em; 
+    font-size: .9em;
+  }
+}

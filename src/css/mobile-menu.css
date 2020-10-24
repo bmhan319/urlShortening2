@@ -1,0 +1,35 @@
+.mobile-menu {
+  text-align: center;
+  margin: 0px 20px;
+  padding: 32px 0;
+  background-color: var(--DarkViolet);
+  border-radius: 8px;
+  display: none;
+}
+
+.mobile-menu ul li {
+  list-style: none;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.mobile-menu ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu ul li:nth-child(6) {
+  background-color: var(--Cyan);
+  margin-bottom: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 10px 0;
+}
+
+.menu-line {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid var(--GrayViolet);
+  opacity: .2;
+}

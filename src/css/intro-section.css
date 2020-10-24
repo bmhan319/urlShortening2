@@ -1,0 +1,133 @@
+.sec1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px 0 100px;
+  text-align: center;
+}
+
+.intro-image-container {
+  width: 100%;
+  height: 340px;
+  background-image: url('../img/illustration-working.svg');
+  background-position: 20px center;
+  background-size: 135%;
+  background-repeat: no-repeat;
+}
+
+.intro-text-container {
+  padding-top: 50px;
+}
+
+.intro-title {
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+
+.intro-text {
+  padding: 16px 20px 0;
+  color: var(--GrayViolet);
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 30px;
+}
+
+.intro-start-button {
+  margin-top: 16px;
+  border-radius: 30px;
+  width: 200px;
+  height: 44px; 
+  background-color: var(--Cyan);
+  color: #fff;
+  border: 0;
+  font-size: .85em;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.intro-start-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 1pt #000;
+}
+@media only screen and (min-width: 501px) {
+  .intro-image-container {
+    background-size: 115%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .sec1 {
+    flex-direction: row;
+    padding: 0 0 100px 40px;
+    text-align: left;
+  }
+
+  .intro-text-container {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-right: 8px;
+  }
+
+  .intro-image-container {
+    width: 50%;
+    height: auto;
+    background-position: 20px center;
+    background-size: cover;
+  }
+
+  .intro-title {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .intro-text {
+    padding: 0;
+    font-size: 1em;
+    letter-spacing: 0;
+  }
+
+  .intro-start-button {
+    width: 150px;
+  }
+
+  .intro-start-button:hover {
+    background-color: var(--BrightButton);
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .sec1 {
+    max-width: 1440px;
+    padding: 0 0 100px 170px;
+  }
+
+  .intro-title {
+    line-height: 1.1em;
+  }
+
+  .intro-text {
+    line-height: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .intro-title {
+    font-size: 4em;
+  }
+
+  .intro-text {
+    font-size: 1.3em;
+    line-height: 1.8em;
+  }
+
+  .intro-start-button {
+    width: 11em;
+    height: 2.7em; 
+    font-size: .9em;
+  }
+}

@@ -1,0 +1,92 @@
+.shorten-container {
+  width: 100%;
+  background-color: var(--DarkViolet);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.shorten-container-top {
+  top: -62px; /*change this for 'error' to -76px*/
+}
+
+.shorten-container-top-error {
+  top: -76px;
+}
+
+.inputTextContainer {
+  width: 100%;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+}
+
+.input-text {
+  padding-left: 12px;
+}
+
+.input-text::placeholder {
+  color: var(--GrayViolet);
+}
+
+.error::after {
+  content: "Please add a link";
+  color: var(--Red);
+  font-size: .65em;
+  font-style: italic;
+}
+
+.input-submit {
+  margin-top: 12px;
+  background-color: var(--Cyan);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 601px) {
+  .shorten-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px;
+    top: -52px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .shorten-container-top-error {
+    top: -52px;
+  }
+
+  .inputTextContainer {
+    width: 100%;
+    margin-right: 16px;
+  }
+
+  .error::after {
+    position: absolute;
+    left: 32px;
+    bottom: 12px;
+  }
+
+  .input-submit {
+    width: 150px;
+    margin-top: 0;
+  }
+
+  .input-submit:hover {
+    background-color: var(--BrightButton);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+
+}

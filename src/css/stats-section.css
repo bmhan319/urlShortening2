@@ -1,0 +1,152 @@
+.sec2 {
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+  background-color: var(--LightViolet);
+  border: 1px solid var(--LightViolet);
+}
+
+.stats-text-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stats-title {
+  margin-bottom: 16px;
+}
+
+.stats-text {
+  color: var(--GrayViolet);
+  font-size: .9em;
+}
+
+.window {
+  background-color: #fff;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 50px 20px 30px;
+  position: relative;
+}
+
+.window-icon-container {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--DarkViolet);
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.brand-icon-container {
+  background-image: url("../img/icon-brand-recognition.svg");
+}
+
+.detail-icon-container {
+  background-image: url("../img/icon-detailed-records.svg");
+}
+
+.custom-icon-container {
+  background-image: url("../img/icon-fully-customizable.svg");
+}
+
+.vertical-line {
+  width: 4px;
+  height: 30px;
+  background-color: var(--Cyan);
+  position: absolute;
+  bottom: -30px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.window-text {
+  color: var(--GrayViolet);
+  font-size: .9em;
+  margin-top: 8px;
+}
+
+@media only screen and (min-width: 601px) {
+  .sec2 {
+    max-width: 1440px;
+    padding: 0 40px 80px;
+  }
+
+  .stats-text-container {
+    width: 470px;
+    margin: 30px auto 70px;
+  }
+
+  .windows-container {
+    display: flex;
+  }
+
+  .window {
+    margin-bottom: 0;
+    text-align: center;
+    padding: 50px 20px 30px;
+    position: relative;
+  }
+
+  .window1,
+  .window2 {
+    margin-right: 20px;
+  }
+
+  .window1 {
+    margin-bottom: 60px;
+  }
+
+  .window2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .window3 {
+    margin-top: 60px;
+  }
+
+  .window-icon-container {
+    left: 7%;
+    transform: none;
+  }
+
+  .vertical-line {
+    width: 20px;
+    height: 4px;
+    bottom: 45%;
+    right: -20px;
+    transform: translate(0, 0%);
+  }
+
+  .vertical-line2 {
+    bottom: calc(45% + 30px);
+  }
+
+  .window-title {
+    font-size: 1em;
+  }
+  .window-text {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .sec2 {
+    padding: 0px 170px 80px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .window-title {
+    font-size: .9em;
+  }
+  .window-text {
+    font-size: .9em;
+  }
+}

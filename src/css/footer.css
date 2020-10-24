@@ -1,0 +1,144 @@
+.footer {
+  background-color: var(--DarkerViolet);
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.footer-logo-container {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-logo {
+  filter: invert(96%) sepia(8%) saturate(0%) hue-rotate(148deg) brightness(107%) contrast(100%);
+  width: 30%;
+}
+
+.footer-link-container  {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-title {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  list-style: none;
+  line-height: 20px;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: var(--Gray);
+  font-size: .6em;
+}
+
+.footer-social-container {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social {
+  margin-right: 16px;
+}
+
+.footer-instagram {
+  margin-right: 0;
+}
+
+.social {
+  width: 16px;
+  height: 16px;
+}
+
+.social:hover {
+  filter: url(#colorFilter);
+}
+
+.svgFilter {
+  display: none;
+}
+
+@media only screen and (min-width: 551px) {
+  .footer {
+    display: flex;
+    padding: 40px 20px;
+    justify-content: space-between;
+  }
+
+  .footer-logo-container {
+    width: 25%;
+    text-align: left;
+  }
+
+  .footer-logo {
+    width: 4em;
+  }
+
+  .footer-link-container {
+    width: auto;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .footer-social-container {
+    margin-top: 0px;
+    width: 25%;
+  }
+
+  .footer-link a:hover {
+    color: var(--Cyan);
+  }
+
+  .footer-social {
+    margin-right: 8px;
+  }
+
+  .footer-instagram {
+    margin-right: 0;
+  }
+
+  .footer-social-list {
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .footer {
+    padding: 40px;
+  }
+  
+  .footer-logo {
+    width: 4.7em;
+  }
+
+  .footer-social {
+    margin-right: 16px;
+  }
+
+  .footer-instagram {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .footer {
+    max-width: 1440px;
+    padding: 40px 170px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .footer-link-container {
+    padding-left: 100px;
+  }
+}
+
